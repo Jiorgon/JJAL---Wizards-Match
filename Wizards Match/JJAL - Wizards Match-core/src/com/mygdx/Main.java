@@ -1,4 +1,4 @@
-package com.mygdx.game;
+package com.mygdx;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
@@ -10,10 +10,10 @@ public class Main extends ApplicationAdapter {
 	SpriteBatch batch;
 	Texture img;
 	
-	@Override
+	@Override		
 	public void create () {
 		batch = new SpriteBatch();
-		img = new Texture("badlogic.jpg");
+		img = new Texture(Gdx.files.internal("badlogic.jpg"));
 	}
 
 	@Override
